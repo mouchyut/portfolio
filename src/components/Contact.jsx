@@ -1,15 +1,22 @@
 import { Mail, Phone, Github, Linkedin, MapPin } from "lucide-react";
-
+import Swal from "sweetalert2";
 export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Thank you! Your message.");
+    Swal.fire({
+      icon: "success",
+      title: "Message Sent!",
+      text: "Thank you for your message ❤️",
+      confirmButtonColor: "#ff4500",
+    });
   };
 
   return (
     <div className="grid md:grid-cols-2 gap-10 items-start">
       <div>
-        <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-primary ">Contact</h2>
+        <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-primary ">
+          Contact
+        </h2>
         <p className="text-slate-300 text-sm sm:text-base mb-4">
           If you&apos;d like to talk about a role, a project, or just connect,
           feel free to reach out. I&apos;m open to junior / graduate roles in
