@@ -53,15 +53,20 @@ export default function Achievement() {
               />
             ) : (
               <iframe
-                src={`https://docs.google.com/viewer?url=${window.location.origin + item.file}&embedded=true`}
+                src={`https://docs.google.com/viewer?url=${
+                  window.location.origin + item.file
+                }&embedded=true`}
                 className="w-full h-64 rounded-lg border border-slate-600"
               ></iframe>
             )}
 
             <div className="flex gap-4 mt-4">
               <a
-                href={item.file}
+                href={`https://docs.google.com/viewer?url=${
+                  window.location.origin + item.file
+                }&embedded=true`}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="px-4 py-2 bg-primary rounded-lg text-white text-sm hover:bg-orange-700"
               >
                 View
