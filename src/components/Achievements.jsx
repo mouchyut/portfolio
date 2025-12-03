@@ -19,7 +19,7 @@ const achievements = [
   {
     title: "Web Development Fullstack Course Java Spring Boot",
     image: Springboot,
-    file: "https://docs.google.com/presentation/d/17bJ1QSDYc3g26AJvP4LQvlCxt2nppxlsXBmxRnsqQ-4/edit?usp=sharing",
+    file: "https://docs.google.com/presentation/d/1qF4QW6GdYpAeFZ5lrnpGWyxuKvlHycY2IIUHU8KbvmU/edit?usp=sharing",
   },
 ];
 
