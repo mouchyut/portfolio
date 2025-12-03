@@ -44,7 +44,7 @@ export default function Achievement() {
               {item.title}
             </h3>
 
-            {/* ถ้ามี image → แสดงภาพแทน iframe */}
+            {/* ถ้ามี image → แสดงรูป */}
             {item.image ? (
               <img
                 src={item.image}
@@ -53,7 +53,7 @@ export default function Achievement() {
               />
             ) : (
               <iframe
-                src={item.file}
+                src={`https://docs.google.com/viewer?url=${window.location.origin + item.file}&embedded=true`}
                 className="w-full h-64 rounded-lg border border-slate-600"
               ></iframe>
             )}
@@ -66,14 +66,14 @@ export default function Achievement() {
               >
                 View
               </a>
-                <a
-                  href={item.file}
-                  download
-                  className="px-4 py-2 bg-slate-700 rounded-lg text-white text-sm hover:bg-slate-600"
-                >
-                  Download
-                </a>
-              
+
+              <a
+                href={item.file}
+                download
+                className="px-4 py-2 bg-slate-700 rounded-lg text-white text-sm hover:bg-slate-600"
+              >
+                Download
+              </a>
             </div>
           </motion.div>
         ))}
