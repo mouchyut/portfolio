@@ -6,7 +6,7 @@ export default function Contact() {
     Swal.fire({
       icon: "success",
       title: "Message Sent!",
-      text: "Thank you for your message ❤️",
+      text: "Thank you for your message",
       confirmButtonColor: "#ff4500",
     });
   };

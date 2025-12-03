@@ -8,14 +8,13 @@ import Footer from "./components/Footer";
 import Experience from "./components/Experience";
 import Achievement from "./components/Achievements";
 import Service from "./components/Service";
+import Blog from "./components/Blog";
 import Education from "./components/Education";
 import NeuralNoise from "./components/neural-glow";
 
 export default function App() {
   return (
     <div className="relative min-h-screen bg-slate-950/50 text-slate-50">
-
-
       {/* ⭐ Neural Glow Background FIXED */}
       <div className="fixed inset-0 -z-10 pointer-events-none">
         <NeuralNoise />
@@ -54,6 +53,9 @@ export default function App() {
 
         <section id="services" className="py-24">
           <Service />
+        </section>
+        <section id="blog" className="py-24">
+          <Blog />
         </section>
 
         <section id="contact" className="py-24">
