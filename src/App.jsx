@@ -50,14 +50,12 @@ export default function App() {
         <section id="achievement" className="py-24">
           <Achievement />
         </section>
-
-        <section id="services" className="py-24">
-          <Service />
-        </section>
         <section id="blog" className="py-24">
           <Blog />
         </section>
-
+        <section id="services" className="py-24">
+          <Service />
+        </section>
         <section id="contact" className="py-24">
           <Contact />
         </section>
